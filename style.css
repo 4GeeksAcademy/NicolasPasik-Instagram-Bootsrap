@@ -1,0 +1,48 @@
+body{
+    /* background-color: #FFE53B;
+    background-image: linear-gradient(90deg, #FFE53B 0%, #ff6600 24%, #c54e08 66%, #000000 100%);
+     */
+     background: url(https://cdn.openart.ai/published/wA8D1KayyHNNbQnPHT7y/6VBRfclQ_ku-H_1024.webp);
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.rounded-btn {
+    padding: 4px 12px;
+    border-radius: 8px; 
+    font-size: 1rem;
+    border: 1px solid rgb(194, 191, 191);
+
+   
+}
+.map{
+    width: 17px;
+  
+}
+
+.fotos_home img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.fotos_home img:hover{
+   cursor: pointer;
+   transform: scale(1.01);
+   filter: brightness(1.2);
+}
+
+.fotos-profile 
+{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transform: scale(1.005); /* Esto por no poder que me sobra un hueco blanco en la card del padding */
+}
+.fotos-profile:hover{
+    cursor: pointer;
+   filter: brightness(1.1);
+}
+
+
