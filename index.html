@@ -9,77 +9,95 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
 
-    <div  class="container-fluid px-5">
-        <div id="top" class="row  border-grey border-bottom py-3 ">
-            <div class="col-9 d-flex align-items-center">
+    <div class="container-fluid px-5">
 
-                <a class="link"  href="https://www.nasa.gov/" target="_blank"><i class="fs-4 fa-brands fa-instagram me-2 text-white"></i></a>
-
-                <a class="link" href="https://www.nasa.gov/" target="_blank"><h5 class="mb-0 text-white">Instagram</h5></a>
-            </div>
-            <div class="col-3 d-flex pt-1 justify-content-end ">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-light " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Create a new post
+        <nav class="navbar d-flex navbar-expand-lg fixed-top py-2 px-2">
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <a class="link" href="https://www.nasa.gov/" target="_blank"><i
+                            class="fs-4 fa-brands fa-instagram me-2 text-white"></i></a>
+                    <a class="link" href="https://www.nasa.gov/" target="_blank">
+                        <h5 class="mb-0 text-white me-auto">Instagram</h5>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation"
+                    aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <label for="exampleFormControlTextarea2" class="form-label">Title:</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea2"
-                                placeholder="Add the title of your post here" rows="1"></textarea>
-                                <label for="exampleFormControlTextarea1" class="form-label">Add the caption of your text here</label>
+                <div class="collapse navbar-collapse" tabindex="-1" id="navbarOffcanvasLg"
+                    aria-labelledby="navbarOffcanvasLgLabel">
+                    <button type="button" class="btn btn-light  ms-auto " data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
 
-                               
-                                <textarea class="form-control" id="exampleFormControlTextarea1"
-                                    placeholder="Add the caption of your post here" rows="2"></textarea>
-                                <div class="pt-2 ">
-                                    <button class="rounded-btn" type="button"><i
-                                            class="fa-solid fa-camera rounded"></i></button>
-                                    <button class="rounded-btn" type="button"><i
-                                            class="map fa-solid fa-location-dot"></i></button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-success">Publish</button>
+                                <div class="modal-body">
+                                    <label for="exampleFormControlTextarea2" class="form-label">Title:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea2"
+                                        placeholder="Add the title of your post here" rows="1"></textarea>
+                                    <label for="exampleFormControlTextarea1" class="form-label">Add the caption of your
+                                        text
+                                        here</label>
+
+
+                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                        placeholder="Add the caption of your post here" rows="2"></textarea>
+                                    <div class="pt-2 ">
+                                        <button class="rounded-btn" type="button"><i
+                                                class="fa-solid fa-camera rounded"></i></button>
+                                        <button class="rounded-btn" type="button"><i
+                                                class="map fa-solid fa-location-dot"></i></button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="dropdown ms-3">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="fa-solid fa-gear"></i>
-                    </a>
-                    <!--como cambio el color azul cuando clikeo?-->
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                        <li><a class="dropdown-item" href="#">Privacy and data</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                    </ul>
+                    <div class="dropdown ms-3">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                        <!--como cambio el color azul cuando clikeo?-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
+
+
+
+
 
         <ul class="nav nav-tabs d-flex justify-content-center pt-4" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -99,204 +117,243 @@
                 tabindex="0">
                 <div class="container-fluid">
                     <div class="row fotos_home">
-                        <div class="col-12 col-sm-4 px-0 py-2 "> 
+                        <div class="col-12  col-md-6 col-lg-4  py-2 ">
                             <img src="https://www.sopitas.com/wp-content/uploads/2016/07/sol-estrella-nasa-e1468700682436.jpg"
                                 alt="Foto del Sol">
                         </div>
-                        <div class="col-12 col-sm-4  px-2 py-2">
+                        <div class="col-12 col-md-6 col-lg-4  py-2">
                             <img src="https://resizer.glanacion.com/resizer/v2/mercurio-retrogrado-es-una-ilusion-optica-que-VLCD2NDYSZHHLESNPPKCF4YD54.jpg?auth=3d1782857533b4d9afb9e426645527b1a2b6d39c883904293019e27b513ebca4&width=1280&height=854&quality=70&smart=true"
                                 alt="Foto de Mercurio">
                         </div>
-                        <div class="col-12 col-sm-4 px-0 py-2">
+                        <div class="col-12 col-md-6 col-lg-4  col-md-4  py-2">
                             <img src="https://img.freepik.com/fotos-premium/rotacion-planeta-venus-genero-representacion-3d-fondo-realista-elementos-imagen-son-presentados-nasa_828631-3429.jpg"
                                 alt="Foto de Venus">
                         </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                    tabindex="0">
-                    <div class="container-fluid">
-                        <div class="row fotos_home">
-                            <div class="col-12 col-sm-4 px-0 py-0 ">
-                                <img src="https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11009_640.jpg"
-                                    alt="Foto de la Tierra">
-                            </div>
-                            <div class="col-12 col-sm-4 px-2 py-0">
-                                <img src="https://cdn.pixabay.com/photo/2011/12/13/14/30/mars-11012_1280.jpg"
-                                    alt="Foto de Marte">
-                            </div>
-                            <div class="col-12 col-sm-4 px-0 py-0">
-                                <img src="https://cdn.pixabay.com/photo/2020/02/22/08/15/space-4869815_640.jpg"
-                                    alt="Foto de Jupiter 3">
-                            </div>
+                        <div class="col-12 col-md-6 col-lg-4 py-2 ">
+                            <img src="https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11009_640.jpg"
+                                alt="Foto de la Tierra">
                         </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row fotos_home">
-                            <div class="col-12 col-sm-4 px-0 py-2 ">
-                                <img src="https://cdn.pixabay.com/photo/2012/11/28/10/54/saturn-67671_640.jpg"
-                                    alt="Foto de Saturno">
-                            </div>
-                            <div class="col-12 col-sm-4 px-2 py-2">
-                                <img src="https://cdn.pixabay.com/photo/2021/03/02/17/58/uranus-6063396_1280.jpg"
-                                    alt="Foto de Urano">
-                            </div>
-                            <div class="col-12 col-sm-4 px-0 py-2">
-                                <img src="https://cdn.pixabay.com/photo/2012/11/28/09/17/neptune-67537_640.jpg"
-                                    alt="Foto de Neptuno">
-                            </div>
+                        <div class="col-12 col-md-6 col-lg-4  py-2">
+                            <img src="https://cdn.pixabay.com/photo/2011/12/13/14/30/mars-11012_1280.jpg"
+                                alt="Foto de Marte">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4  py-2">
+                            <img src="https://cdn.pixabay.com/photo/2020/02/22/08/15/space-4869815_640.jpg"
+                                alt="Foto de Jupiter 3">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4   py-2 ">
+                            <img src="https://cdn.pixabay.com/photo/2012/11/28/10/54/saturn-67671_640.jpg"
+                                alt="Foto de Saturno">
+                        </div>
+                        <div class="col-12  col-md-6 col-lg-4  py-2">
+                            <img src="https://cdn.pixabay.com/photo/2021/03/02/17/58/uranus-6063396_1280.jpg"
+                                alt="Foto de Urano">
+                        </div>
+                        <div class="col-12  col-md-6 col-lg-4  py-2">
+                            <img src="https://cdn.pixabay.com/photo/2012/11/28/09/17/neptune-67537_640.jpg"
+                                alt="Foto de Neptuno">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="tab-pane fade sol" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="tab-pane fade sol" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                tabindex="0">
                 <div class="container-fluid d-flex justify-content-center ">
                     <div class="card my-4 " style="width: 30rem;">
                         <div class="d-flex justify-content-between">
                             <h5 class="card-title px-1 pt-1">El Sol</h5>
                             <small class="text-muted just">08/29</small>
                         </div>
-                        <img class="img-fluid w-100 fotos-profile" src="https://www.sopitas.com/wp-content/uploads/2016/07/sol-estrella-nasa-e1468700682436.jpg"
+                        <img class="img-fluid w-100 fotos-profile"
+                            src="https://www.sopitas.com/wp-content/uploads/2016/07/sol-estrella-nasa-e1468700682436.jpg"
                             alt="Foto del Sol">
                         <div class="card-body">
-                
+
                             <p class="card-text"> <b>204 Likes</b></p>
-                            <p class="card-text"> El Sol es una de los mil millones de estrellas que existen en el Universo. Su gravedad es tan grande que mantiene a todos los cuerpos de Sistema Solar en constante movimiento alrededor de sus órbitas. Esta enorme esfera de gas incandescente está formada principalmente de hidrógeno y helio.</p>
-                
+                            <p class="card-text"> El Sol es una de los mil millones de estrellas que existen en el
+                                Universo.
+                                Su gravedad es tan grande que mantiene a todos los cuerpos de Sistema Solar en constante
+                                movimiento alrededor de sus órbitas. Esta enorme esfera de gas incandescente está
+                                formada
+                                principalmente de hidrógeno y helio.</p>
+
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid d-flex justify-content-center">   <!---align-self-top? -->
+                <div class="container-fluid d-flex justify-content-center"> <!---align-self-top? -->
                     <div class="card my-4" style="width: 30rem;">
                         <div class="d-flex justify-content-between">
                             <h5 class="card-title px-1 pt-1">Mercurio</h5>
                             <small class="text-muted just">08/26</small>
                         </div>
-                        <img class="fotos-profile" src="https://resizer.glanacion.com/resizer/v2/mercurio-retrogrado-es-una-ilusion-optica-que-VLCD2NDYSZHHLESNPPKCF4YD54.jpg?auth=3d1782857533b4d9afb9e426645527b1a2b6d39c883904293019e27b513ebca4&width=1280&height=854&quality=70&smart=true"
+                        <img class="fotos-profile"
+                            src="https://resizer.glanacion.com/resizer/v2/mercurio-retrogrado-es-una-ilusion-optica-que-VLCD2NDYSZHHLESNPPKCF4YD54.jpg?auth=3d1782857533b4d9afb9e426645527b1a2b6d39c883904293019e27b513ebca4&width=1280&height=854&quality=70&smart=true"
                             alt="Foto de Mercurio">
                         <div class="card-body">
-                
+
                             <p class="card-text"> <b>20024 Likes</b></p>
-                            <p class="card-text"> Mercurio es el planeta más pequeño de nuestro sistema solar. Es apenas un poco más grande que la Luna de la Tierra. Sin embargo, Mercurio no tiene lunas. Es el planeta más cercano al Sol, pero en realidad no es el más caliente. Venus es más caliente.
-                            Junto con Venus, la Tierra y Marte, Mercurio es uno de los planetas rocosos. Tiene una superficie sólida que está cubierta de cráteres.</p>
+                            <p class="card-text"> Mercurio es el planeta más pequeño de nuestro sistema solar. Es apenas
+                                un
+                                poco más grande que la Luna de la Tierra. Sin embargo, Mercurio no tiene lunas. Es el
+                                planeta más cercano al Sol, pero en realidad no es el más caliente. Venus es más
+                                caliente.
+                                Junto con Venus, la Tierra y Marte, Mercurio es uno de los planetas rocosos. Tiene una
+                                superficie sólida que está cubierta de cráteres.</p>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid d-flex justify-content-center">  
+                <div class="container-fluid d-flex justify-content-center">
                     <div class="card my-4" style="width: 30rem;">
                         <div class="d-flex justify-content-between">
                             <h5 class="card-title px-1 pt-1">Venus</h5>
                             <small class="text-muted just">08/15</small>
                         </div>
-                        <img class="fotos-profile" src="https://img.freepik.com/fotos-premium/rotacion-planeta-venus-genero-representacion-3d-fondo-realista-elementos-imagen-son-presentados-nasa_828631-3429.jpg"
+                        <img class="fotos-profile"
+                            src="https://img.freepik.com/fotos-premium/rotacion-planeta-venus-genero-representacion-3d-fondo-realista-elementos-imagen-son-presentados-nasa_828631-3429.jpg"
                             alt="Foto de Venus">
                         <div class="card-body">
-                
+
                             <p class="card-text"> <b>4 Likes</b></p>
-                            <p class="card-text"> Es el planeta más cálido del sistema solar. Es un planeta terrestre: es pequeño y rocoso. Su atmósfera es densa: atrapa el calor y por eso es tan caluroso. Tiene una superficie activa, que incluye volcanes.</p>
+                            <p class="card-text"> Es el planeta más cálido del sistema solar. Es un planeta terrestre:
+                                es
+                                pequeño y rocoso. Su atmósfera es densa: atrapa el calor y por eso es tan caluroso.
+                                Tiene
+                                una superficie activa, que incluye volcanes.</p>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid d-flex justify-content-center">   
+                <div class="container-fluid d-flex justify-content-center">
                     <div class="card my-4" style="width: 30rem;">
                         <div class="d-flex justify-content-between">
                             <h5 class="card-title px-1 pt-1">La Tierra</h5>
                             <small class="text-muted just">07/25</small>
                         </div>
-                        <img class="fotos-profile" src="https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11009_640.jpg"
+                        <img class="fotos-profile"
+                            src="https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11009_640.jpg"
                             alt="Foto de la Tierra">
                         <div class="card-body">
-                
+
                             <p class="card-text"> <b>9999999 Likes</b></p>
-                            <p class="card-text"> Nuestro hogar, el planeta Tierra, es un planeta terrestre y rocoso. Tiene una superficie sólida y activa, con montañas, valles, cañones, llanuras y mucho más. La Tierra es especial porque es un planeta océano, ya que el agua cubre el 70% de su superficie.</p>
+                            <p class="card-text"> Nuestro hogar, el planeta Tierra, es un planeta terrestre y rocoso.
+                                Tiene
+                                una superficie sólida y activa, con montañas, valles, cañones, llanuras y mucho más. La
+                                Tierra es especial porque es un planeta océano, ya que el agua cubre el 70% de su
+                                superficie.</p>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid d-flex justify-content-center">  
+                <div class="container-fluid d-flex justify-content-center">
                     <div class="card my-4" style="width: 30rem;">
                         <div class="d-flex justify-content-between">
                             <h5 class="card-title px-1 pt-1">Marte</h5>
                             <small class="text-muted just">07/22</small>
                         </div>
-                        <img class="fotos-profile" src="https://cdn.pixabay.com/photo/2011/12/13/14/30/mars-11012_1280.jpg"
+                        <img class="fotos-profile"
+                            src="https://cdn.pixabay.com/photo/2011/12/13/14/30/mars-11012_1280.jpg"
                             alt="Foto de Marte">
                         <div class="card-body">
-                
+
                             <p class="card-text"> <b>3023 Likes</b></p>
-                            <p class="card-text"> 
-                                Marte es el planeta interior más alejado del Sol. Es un planeta telúrico con una atmósfera delgada de dióxido de carbono, y tiene dos satélites pequeños y de forma irregular, Fobos y Deimos (hijos del dios griego), que podrían ser asteroides capturados​​ similares al asteroide troyano (5261) Eureka.</p>
+                            <p class="card-text">
+                                Marte es el planeta interior más alejado del Sol. Es un planeta telúrico con una
+                                atmósfera
+                                delgada de dióxido de carbono, y tiene dos satélites pequeños y de forma irregular,
+                                Fobos y
+                                Deimos (hijos del dios griego), que podrían ser asteroides capturados​​ similares al
+                                asteroide troyano (5261) Eureka.</p>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid d-flex justify-content-center">  
+                <div class="container-fluid d-flex justify-content-center">
                     <div class="card my-4" style="width: 30rem;">
                         <div class="d-flex justify-content-between">
                             <h5 class="card-title px-1 pt-1">Júpiter</h5>
                             <small class="text-muted just">07/02</small>
                         </div>
-                        <img class="fotos-profile" src="  https://cdn.pixabay.com/photo/2020/02/22/08/15/space-4869815_640.jpg"
+                        <img class="fotos-profile"
+                            src="  https://cdn.pixabay.com/photo/2020/02/22/08/15/space-4869815_640.jpg"
                             alt="Foto de Júpiter">
                         <div class="card-body">
-                
+
                             <p class="card-text"> <b>222222 Likes</b></p>
-                            <p class="card-text"> 
-                                Júpiter es el planeta más grande del sistema solar y el quinto en orden de lejanía al Sol.​ Es un gigante gaseoso que forma parte de los denominados planetas exteriores. Recibe su nombre del dios romano Júpiter y los antiguos griegos le daban el nombre Fenonte</p>
+                            <p class="card-text">
+                                Júpiter es el planeta más grande del sistema solar y el quinto en orden de lejanía al
+                                Sol.​
+                                Es un gigante gaseoso que forma parte de los denominados planetas exteriores. Recibe su
+                                nombre del dios romano Júpiter y los antiguos griegos le daban el nombre Fenonte</p>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid d-flex justify-content-center">   
+                <div class="container-fluid d-flex justify-content-center">
                     <div class="card my-4" style="width: 30rem;">
                         <div class="d-flex justify-content-between">
                             <h5 class="card-title px-1 pt-1">Saturno</h5>
                             <small class="text-muted just">06/26</small>
                         </div>
-                        <img class="fotos-profile" src="https://cdn.pixabay.com/photo/2012/11/28/10/54/saturn-67671_640.jpg"
-                        alt="Foto de Saturno">
+                        <img class="fotos-profile"
+                            src="https://cdn.pixabay.com/photo/2012/11/28/10/54/saturn-67671_640.jpg"
+                            alt="Foto de Saturno">
                         <div class="card-body">
-                
+
                             <p class="card-text"> <b>24 Likes</b></p>
-                            <p class="card-text"> 
-                                Saturno es el sexto planeta del sistema solar contando desde el Sol, el segundo en tamaño y masa después de Júpiter y el único con un sistema de anillos visible desde la Tierra. Su nombre proviene del dios romano Saturno. Forma parte de los denominados planetas exteriores o gaseosos.</p>
+                            <p class="card-text">
+                                Saturno es el sexto planeta del sistema solar contando desde el Sol, el segundo en
+                                tamaño y
+                                masa después de Júpiter y el único con un sistema de anillos visible desde la Tierra. Su
+                                nombre proviene del dios romano Saturno. Forma parte de los denominados planetas
+                                exteriores
+                                o gaseosos.</p>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid d-flex justify-content-center">  
+                <div class="container-fluid d-flex justify-content-center">
                     <div class="card my-4" style="width: 30rem;">
                         <div class="d-flex justify-content-between">
                             <h5 class="card-title px-1 pt-1">Urano</h5>
                             <small class="text-muted just">06/01</small>
                         </div>
-                        <img class="fotos-profile" src="https://cdn.pixabay.com/photo/2021/03/02/17/58/uranus-6063396_1280.jpg"
-                        alt="Foto de Urano">
+                        <img class="fotos-profile"
+                            src="https://cdn.pixabay.com/photo/2021/03/02/17/58/uranus-6063396_1280.jpg"
+                            alt="Foto de Urano">
                         <div class="card-body">
-                
+
                             <p class="card-text"> <b>2025 Likes</b></p>
-                            <p class="card-text"> 
-                                Urano es el séptimo planeta del sistema solar, el tercero de mayor tamaño, y el cuarto más masivo. Se llama así en honor de la divinidad griega del cielo Urano, el padre de Crono (Saturno) y el abuelo de Zeus (Júpiter). Aunque es detectable a simple vista en el cielo nocturno, no fue catalogado como planeta por los astrónomos de la antigüedad debido a su escasa luminosidad y a la lentitud de su órbita</p>
+                            <p class="card-text">
+                                Urano es el séptimo planeta del sistema solar, el tercero de mayor tamaño, y el cuarto
+                                más
+                                masivo. Se llama así en honor de la divinidad griega del cielo Urano, el padre de Crono
+                                (Saturno) y el abuelo de Zeus (Júpiter). Aunque es detectable a simple vista en el cielo
+                                nocturno, no fue catalogado como planeta por los astrónomos de la antigüedad debido a su
+                                escasa luminosidad y a la lentitud de su órbita</p>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid d-flex justify-content-center">   
+                <div class="container-fluid d-flex justify-content-center">
                     <div class="card my-4" style="width: 30rem;">
                         <div class="d-flex justify-content-between">
                             <h5 class="card-title px-1 pt-1">Neptuno</h5>
                             <small class="text-muted just">05/20</small>
                         </div>
-                        <img class="fotos-profile" src="https://cdn.pixabay.com/photo/2012/11/28/09/17/neptune-67537_640.jpg"
-                                    alt="Foto de Neptuno">
+                        <img class="fotos-profile"
+                            src="https://cdn.pixabay.com/photo/2012/11/28/09/17/neptune-67537_640.jpg"
+                            alt="Foto de Neptuno">
                         <div class="card-body">
-                
+
                             <p class="card-text"> <b>1 Likes</b></p>
-                            <p class="card-text"> 
-                                Neptuno es el octavo planeta en distancia respecto al Sol y el más lejano del sistema solar. Forma parte de los denominados planetas exteriores, y dentro de estos, es uno de los gigantes helados y es el primero que fue descubierto gracias a predicciones matemáticas.</p>
+                            <p class="card-text">
+                                Neptuno es el octavo planeta en distancia respecto al Sol y el más lejano del sistema
+                                solar.
+                                Forma parte de los denominados planetas exteriores, y dentro de estos, es uno de los
+                                gigantes helados y es el primero que fue descubierto gracias a predicciones matemáticas.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <a href="#top" class="btn btn-info position-fixed bottom-0 end-0 m-4">Back to the stars ↑ </a>
+                <a href="#top" class="btn btn-info position-fixed bottom-0 end-0 m-4">Back to the top ↑ </a>
             </div>
-           
-          
+
+
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
