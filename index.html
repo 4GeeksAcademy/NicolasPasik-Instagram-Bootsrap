@@ -28,15 +28,15 @@
                         <h5 class="mb-0 text-white me-auto">Instagram</h5>
                     </a>
                 </div>
-                <!-- togler siempre gris?-->
-                <button class="navbar-toggler border  " type="button" data-bs-toggle="collapse"
+                
+                <button class="navbar-toggler border" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation"
                     aria-expanded="false">
                     <span class="navbar-toggler-icon "></span>
                 </button>
-                <div class="collapse navbar-collapse" tabindex="-1" id="navbarOffcanvasLg"
+                <div class="collapse navbar-collapse to-right" tabindex="-1" id="navbarOffcanvasLg"
                     aria-labelledby="navbarOffcanvasLgLabel">
-                    <button type="button" class="btn btn-light  ms-auto" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-light ms-auto" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         Create a new post
                     </button>
@@ -48,7 +48,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    <button type="button" class="btn-close " data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -56,8 +56,7 @@
                                     <textarea class="form-control" id="exampleFormControlTextarea2"
                                         placeholder="Add the title of your post here" rows="1"></textarea>
                                     <label for="exampleFormControlTextarea1" class="form-label">Add the caption of your
-                                        text
-                                        here</label>
+                                        text here</label>
 
 
                                     <textarea class="form-control" id="exampleFormControlTextarea1"
@@ -76,13 +75,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dropdown ms-3">
+                    <div class="dropdown ms-2">
                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="fa-solid fa-gear"></i>
                         </a>
                         <!--como cambio el color azul cuando clikeo?-->
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu dropdown-menu-end"> <!-- dropdown menu end me tira el menu a la derecha y no se escapa del container (solucionado con dropdown-menu-end)-->
                             <li><a class="dropdown-item" href="#">Profile</a></li>
                             <li><a class="dropdown-item" href="#">Accesibility</a></li>
                             <li><a class="dropdown-item" href="#">Privacy and data</a></li>

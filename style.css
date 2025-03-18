@@ -50,6 +50,12 @@ body{
 
 
 .modal-backdrop {
-    display: none !important;
-  }
+    display: none !important; /* me soluciona el problema del modal shadow */  
+}
  
+.to-right{  /* Para arreglar el posicionamiento del navbar collapse*/
+    display: grid;
+    justify-content: end;
+    text-align: right;
+
+}
